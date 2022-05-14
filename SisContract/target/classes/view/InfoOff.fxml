@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="480.0" maxWidth="680.0" minHeight="480.0" minWidth="680.0" prefHeight="480.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InfoOffController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="680.0">
+         <image>
+            <Image url="@../botoes/infotelaoff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logout" fitHeight="38.0" fitWidth="40.0" layoutX="635.0" layoutY="8.0" onMouseClicked="#logoutOnAction">
+         <image>
+            <Image url="@../logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnNovo" fitHeight="38.0" fitWidth="129.0" layoutX="170.0" layoutY="7.0" onMouseClicked="#btnNovoOnAction">
+         <image>
+            <Image url="@../botoes/novo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnInfo" fitHeight="38.0" fitWidth="147.0" layoutX="1.0" layoutY="152.0" onMouseClicked="#btnInfoOnAction">
+         <image>
+            <Image url="@../botoes/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnModelo" fitHeight="45.0" fitWidth="141.0" layoutX="2.0" layoutY="189.0" onMouseClicked="#btnModeloOnAction">
+         <image>
+            <Image url="@../botoes/modelo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblOff" alignment="CENTER" layoutX="12.0" layoutY="238.0" prefHeight="26.0" prefWidth="122.0" text="OFFLINE" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCidade" layoutX="323.0" layoutY="227.0" prefHeight="32.0" prefWidth="171.0" />
+      <TextField fx:id="txtnome" layoutX="323.0" layoutY="94.0" prefHeight="32.0" prefWidth="171.0" />
+      <TextField fx:id="txtCPF" layoutX="323.0" layoutY="136.0" prefHeight="32.0" prefWidth="171.0" />
+      <TextField fx:id="txtAreaAtu" layoutX="323.0" layoutY="184.0" prefHeight="32.0" prefWidth="171.0" />
+      <TextField fx:id="txtEspec" layoutX="323.0" layoutY="271.0" prefHeight="32.0" prefWidth="171.0" />
+      <JFXButton fx:id="btnAlert" layoutX="507.0" layoutY="274.0" onAction="#btnAlertOnAction" prefHeight="6.0" prefWidth="10.0" text="." />
+      <ImageView fitHeight="18.0" fitWidth="80.0" layoutX="555.0" layoutY="101.0">
+         <image>
+            <Image url="@../botoes/modelolabel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="109.0" layoutX="546.0" layoutY="395.0">
+         <image>
+            <Image url="@../botoes/btnSalvar.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSalvar" layoutX="546.0" layoutY="417.0" onAction="#btnSalvarOnAction" prefHeight="32.0" prefWidth="109.0" text="." />
+      <JFXRadioButton fx:id="rbtnModelo1" layoutX="578.0" layoutY="136.0" onAction="#rbtnModelo1OnAction" text="1">
+         <selectedColor>
+            <Color red="0.08711013942956924" green="0.7130746245384216" blue="0.7236841917037964" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnModelo2" layoutX="578.0" layoutY="176.0" onAction="#rbtnModelo2OnAction" text="2">
+         <selectedColor>
+            <Color red="0.08711013942956924" green="0.7130746245384216" blue="0.7236841917037964" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnModelo3" layoutX="578.0" layoutY="219.0" onAction="#rbtnModelo3OnAction" text="3">
+         <selectedColor>
+            <Color red="0.08711013942956924" green="0.7130746245384216" blue="0.7236841917037964" />
+         </selectedColor>
+      </JFXRadioButton>
+      <TextField fx:id="txtEscolaridade" layoutX="323.0" layoutY="316.0" prefHeight="32.0" prefWidth="171.0" />
+      <TextField fx:id="txtEmail" layoutX="323.0" layoutY="363.0" prefHeight="32.0" prefWidth="171.0" />
+      <JFXButton fx:id="btnAlert2" layoutX="507.0" layoutY="231.0" onAction="#btnAlert2OnAction" prefHeight="6.0" prefWidth="10.0" text="." />
+      <TextField fx:id="txtXP" layoutX="323.0" layoutY="414.0" prefHeight="32.0" prefWidth="171.0" />
+      <JFXButton fx:id="btnAlert1" layoutX="507.0" layoutY="418.0" onAction="#btnAlert1OnAction" prefHeight="6.0" prefWidth="10.0" text="." />
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="480.0" maxWidth="680.0" minHeight="480.0" minWidth="680.0" prefHeight="480.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfigUserController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="680.0">
+         <image>
+            <Image url="@../tela_padrao.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnLogout" fitHeight="35.0" fitWidth="37.0" layoutX="636.0" layoutY="9.0" onMouseClicked="#btnLogoutOnAction">
+         <image>
+            <Image url="@../logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnInfo" fitHeight="42.0" fitWidth="148.0" layoutY="151.0" onMouseClicked="#btnInfoOnAction">
+         <image>
+            <Image url="@../botoes/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnModelo" fitHeight="42.0" fitWidth="148.0" layoutY="193.0" onMouseClicked="#btnModeloOnAction">
+         <image>
+            <Image url="@../botoes/modelo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnConfig" fitHeight="42.0" fitWidth="148.0" layoutY="232.0" onMouseClicked="#btnConfigOnAction">
+         <image>
+            <Image url="@../botoes/config.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnNew" fitHeight="38.0" fitWidth="124.0" layoutX="172.0" layoutY="7.0" onMouseClicked="#btnNewOnAction">
+         <image>
+            <Image url="@../botoes/novo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUserName" alignment="CENTER" layoutX="2.0" layoutY="116.0" onMouseClicked="#lblEmalONMouseClicked" prefHeight="22.0" prefWidth="139.0" text="*CLIQUE AQUI*" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="352.0" layoutX="156.0" layoutY="52.0">
+         <image>
+            <Image url="@../botoes/configTP.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtLogin" layoutX="323.0" layoutY="94.0" prefHeight="35.0" prefWidth="174.0" />
+      <PasswordField fx:id="txtPassword" layoutX="323.0" layoutY="137.0" prefHeight="35.0" prefWidth="174.0" />
+      <ImageView fitHeight="38.0" fitWidth="104.0" layoutX="508.0" layoutY="136.0">
+         <image>
+            <Image url="@../botoes/btnatt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="104.0" layoutX="508.0" layoutY="93.0">
+         <image>
+            <Image url="@../botoes/btnatt.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAttLogin" layoutX="508.0" layoutY="93.0" onAction="#btnAttLoginOnAction" prefHeight="35.0" prefWidth="104.0" text=" " />
+      <JFXButton fx:id="btnAttSenha" layoutX="508.0" layoutY="139.0" onAction="#btnAttSenhaOnAction" prefHeight="35.0" prefWidth="104.0" text=" " />
+   </children>
+</AnchorPane>

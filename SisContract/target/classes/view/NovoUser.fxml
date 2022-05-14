@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="480.0" maxWidth="680.0" minHeight="480.0" minWidth="680.0" prefHeight="480.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NovoUserController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="680.0">
+         <image>
+            <Image url="@../tela_padrao.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnLogout" fitHeight="35.0" fitWidth="37.0" layoutX="636.0" layoutY="9.0" onMouseClicked="#btnLogoutOnAction">
+         <image>
+            <Image url="@../logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnInfo" fitHeight="42.0" fitWidth="148.0" layoutY="151.0" onMouseClicked="#btnInfoOnAction">
+         <image>
+            <Image url="@../botoes/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnModelo" fitHeight="42.0" fitWidth="148.0" layoutY="193.0" onMouseClicked="#btnModeloOnAction">
+         <image>
+            <Image url="@../botoes/modelo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnConfig" fitHeight="42.0" fitWidth="148.0" layoutY="232.0" onMouseClicked="#btnConfigOnAction">
+         <image>
+            <Image url="@../botoes/config.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnNew" fitHeight="38.0" fitWidth="124.0" layoutX="172.0" layoutY="7.0" onMouseClicked="#btnNewOnAction">
+         <image>
+            <Image url="@../botoes/novo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUserName" alignment="CENTER" layoutY="116.0" onMouseClicked="#lblEmalONMouseClicked" prefHeight="22.0" prefWidth="141.0" text="*CLIQUE AQUI*" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="107.0" layoutX="202.0" layoutY="70.0">
+         <image>
+            <Image url="@../botoes/modelolabel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="124.0" layoutX="194.0" layoutY="116.0">
+         <image>
+            <Image url="@../botoes/EmpresaLabel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="107.0" layoutX="424.0" layoutY="388.0">
+         <image>
+            <Image url="@../botoes/btnEnviar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="107.0" layoutX="548.0" layoutY="388.0">
+         <image>
+            <Image url="@../botoes/btnSalvar.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnEnviar" layoutX="424.0" layoutY="409.0" onAction="#btnEnviarOnAction" prefHeight="35.0" prefWidth="107.0" text="." />
+      <JFXButton fx:id="btnSalvar" layoutX="548.0" layoutY="409.0" onAction="#btnSalvarOnAction" prefHeight="35.0" prefWidth="107.0" text="." />
+      <JFXRadioButton fx:id="rbtnModelo1" layoutX="322.0" layoutY="79.0" onAction="#rbtnModelo1OnAction" text="1">
+         <selectedColor>
+            <Color red="0.0690789446234703" green="0.8289473652839661" blue="0.765625" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnModelo3" layoutX="415.0" layoutY="79.0" onAction="#rbtnModelo3OnAction" text="3">
+         <selectedColor>
+            <Color red="0.0690789446234703" green="0.8289473652839661" blue="0.765625" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnModelo2" layoutX="368.0" layoutY="79.0" onAction="#rbtnModelo2OnAction" text="2">
+         <selectedColor>
+            <Color red="0.0690789446234703" green="0.8289473652839661" blue="0.765625" />
+         </selectedColor>
+      </JFXRadioButton>
+      <ImageView fitHeight="35.0" fitWidth="292.0" layoutX="191.0" layoutY="150.0">
+         <image>
+            <Image url="@../botoes/procurar.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtProcurar" layoutX="195.0" layoutY="155.0" prefHeight="25.0" prefWidth="286.0" promptText="Enviar para a Empresa">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="35.0" fitWidth="107.0" layoutX="548.0" layoutY="150.0">
+         <image>
+            <Image url="@../botoes/btnverempresas.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnVer" layoutX="548.0" layoutY="150.0" onAction="#btnVerOnAction" prefHeight="35.0" prefWidth="107.0" text=" " />
+   </children>
+</AnchorPane>

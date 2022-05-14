@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="480.0" maxWidth="680.0" minHeight="480.0" minWidth="680.0" prefHeight="480.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModeloOffController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="680.0">
+         <image>
+            <Image url="@../botoes/modelotela.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logout" fitHeight="38.0" fitWidth="40.0" layoutX="635.0" layoutY="8.0" onMouseClicked="#logoutOnAction">
+         <image>
+            <Image url="@../logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnNovo" fitHeight="38.0" fitWidth="129.0" layoutX="170.0" layoutY="7.0" onMouseClicked="#btnNovoOnAction">
+         <image>
+            <Image url="@../botoes/novo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnInfo" fitHeight="38.0" fitWidth="147.0" layoutX="1.0" layoutY="152.0" onMouseClicked="#btnInfoOnAction">
+         <image>
+            <Image url="@../botoes/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnModelo" fitHeight="45.0" fitWidth="141.0" layoutX="2.0" layoutY="189.0" onMouseClicked="#btnModeloOnAction">
+         <image>
+            <Image url="@../botoes/modelo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblOff" alignment="CENTER" layoutX="12.0" layoutY="238.0" prefHeight="26.0" prefWidth="122.0" text="OFFLINE" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

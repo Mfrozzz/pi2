@@ -1,0 +1,30 @@
+CREATE TABLE usuario(
+	userid serial PRIMARY KEY NOT NULL,
+	login varchar(30)NOT NULL,
+	senha varchar(30)NOT NULL,
+	area varchar(30),
+	nome varchar(40),
+	cpf char(15) UNIQUE,
+	endereco text,
+	escolaridade text,
+	experiencia text,
+	especializacoes text,
+	status varchar(20) CHECK(status IN('empregado','desempregado'))
+);
+
+CREATE TABLE empresa(
+	empresaid serial PRIMARY KEY NOT NULL,
+	login varchar(30)NOT NULL,
+	senha varchar(30)NOT NULL,
+	nome varchar(40),
+	cnpj char(15) UNIQUE,
+	endereco text,
+	cargosOf text
+);
+
+CREATE TABLE contratacao(
+	empresaid int2,
+	userid int2,
+	PRIMARY KEY(empresaid,userid),
+	FOREIGN KEY(empresaid) REFERENCES empresa(empresaid)ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY(userid) REFERENCES usuario(userid)ON DELETE CASCADE ON UPDATE CASCADE);
